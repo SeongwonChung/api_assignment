@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kakaomap assignment</title>
+  <link rel="stylesheet" href="kakaomap.css">
+</head>
+
+<body>
+
+  <div id="map" style="width:100%;height:350px;"></div>
+  <div id="searchBox">
+    <label for="input">장소검색</label>
+    <input type="text" name="input" id="input" placeholder="장소검색" />
+  </div>
+
+  <script type="text/javascript"
+    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=13b2f8bc96ac9a1386a40745763f2e2e&libraries=services,clusterer,drawing"></script>
+  <script src="kakaomap.js"></script>
+  <script src="config.js"></script>
+</body>
+
+</html>
