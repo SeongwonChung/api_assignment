@@ -81,6 +81,8 @@ function closeOverlay() {
 // 마커에 클릭이벤트를 등록합니다
 function displayOverlay(placeSet) {
     kakao.maps.event.addListener(placeSet.marker, 'click', function () {
+        //현재 열려있는 overlay 닫기
+        closeOverlay()
         placeSet.overlay.setMap(map)
         currentOverlay = placeSet.overlay
     })
@@ -125,6 +127,8 @@ function onKeyDown(event) {
     if (event.key === 'Enter') {
         ps.keywordSearch(place, placesSearchCB)
 
+        //현재 열려있는 overlay 닫기
+        closeOverlay()
         //input 비우기
         input.value = ''
     }
